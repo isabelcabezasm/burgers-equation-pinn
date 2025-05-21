@@ -1,0 +1,11 @@
+name: my_pinns_container
+services:
+  devcontainer:
+    image: mcr.microsoft.com/vscode/devcontainers/python:3.12    
+    command: sleep infinity
+    networks:
+      - default
+    volumes:
+      - ../..:/workspaces:cached      
+networks:
+  default:
